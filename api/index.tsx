@@ -6,9 +6,9 @@ import { handle } from 'frog/vercel'
 import { Aetolia1Service } from './generate.js'
 
 // Uncomment to use Edge Runtime.
-export const config = {
-  runtime: 'edge',
-}
+// export const config = {
+//   runtime: 'edge',
+// }
 
 export const app = new Frog({
   assetsPath: '/',
@@ -29,7 +29,7 @@ app.frame('/', async (c) => {
   // const data = await response.text();
   // console.log('🚀 ~ data:', data);
   const timestamp = new Date().getTime()
-  const url = `generate/${timestamp}/${buttonValue ?? ''}`
+  const url = `/api/generate/${timestamp}/${buttonValue ?? ''}`
   return c.res({
     imageAspectRatio: '1:1',
     image: url,
