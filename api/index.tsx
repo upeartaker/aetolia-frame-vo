@@ -6,9 +6,9 @@ import { handle } from 'frog/vercel'
 import { Aetolia1Service } from './generate.js'
 
 // Uncomment to use Edge Runtime.
-// export const config = {
-//   runtime: 'edge',
-// }
+export const config = {
+  runtime: 'edge',
+}
 
 export const app = new Frog({
   assetsPath: '/',
