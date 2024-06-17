@@ -5,7 +5,7 @@ export async function  GET(req:Request){
   const fd = req.url.split('/')
   const direction = fd[fd.length - 1]
 
-  const buffer = await service.generateGif(direction)
+  // const buffer = await service.generateGif(direction)
   req.headers.set('Content-Type', 'image/gif')
   return new Response('123')
 }
