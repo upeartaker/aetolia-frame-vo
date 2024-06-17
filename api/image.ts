@@ -1,6 +1,5 @@
 import { Aetolia1Service } from "./generate.js"
 export const config = {
-  runtime: 'edge',
   supportsResponseStreaming: true,
 }
 export async function  GET(req:Request){
