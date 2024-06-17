@@ -29,7 +29,7 @@ app.frame('/', async (c) => {
   // const data = await response.text();
   // console.log('🚀 ~ data:', data);
   const timestamp = new Date().getTime()
-  const url = `/api/generate/${timestamp}/${buttonValue ?? ''}`
+  const url = `generate/${timestamp}/${buttonValue ?? ''}`
   return c.res({
     imageAspectRatio: '1:1',
     image: url,

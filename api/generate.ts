@@ -4,16 +4,16 @@ import GIFEncoder from 'gifencoder';
 export class Aetolia1Service {
   private characterPosition = { x: 3, y: 3 };
   private mapImages = [
-    './public/map/grass_movement_frame_1.png',
-    './public/map/grass_movement_frame_2.png',
-    './public/map/grass_movement_frame_3.png',
-    './public/map/grass_movement_frame_4.png',
+    '/map/grass_movement_frame_1.png',
+    '/map/grass_movement_frame_2.png',
+    '/map/grass_movement_frame_3.png',
+    '/map/grass_movement_frame_4.png',
   ];
   private characterImages: string[] = [
-    './public/map/nomad1.png',
-    './public/map/nomad2.png',
-    './public/map/nomad3.png',
-    './public/map/nomad4.png',
+    '/map/nomad1.png',
+    '/map/nomad2.png',
+    '/map/nomad3.png',
+    '/map/nomad4.png',
   ];
   private updateCharacterPosition(direction: string) {
     switch (direction) {
